@@ -22,7 +22,7 @@ from django.conf.urls import url, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('principal/', views.principal),
-    url(r'^', include(('rol.urls','rol'))),
-    
+     url(r'^', include(('newsocial_app.urls','newsocial'))),
+     url('api/',include('rest_auth.urls'))
 ]
 
